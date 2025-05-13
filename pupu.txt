@@ -1,0 +1,5 @@
+pip install pyTelegramBotAPI sqlalchemy python-dotenv psycopg2-binary
+
+docker-compose -f docker-compose.yml up -d
+docker-compose -f docker-compose.yml exec postgres bash
+psql -U wg_forge -d wg_forge_db
